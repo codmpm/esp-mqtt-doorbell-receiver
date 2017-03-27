@@ -24,7 +24,7 @@ const char* password = "<your-wifi-key>";
 const char* mqttServer = "<mqtt-broker-ip-or-host>";
 const char* mqttUser = "<mqtt-user>";
 const char* mqttPass = "<mqtt-password>";
-const char* mqttClientName = "<mqtt-client-id>"; //will also be used hostname and OTA name
+const char* mqttClientName = "<mqtt-client-id>"; //will also be used for hostname and OTA name
 const char* mqttTopicPrefix = "<mqtt-topic-prefix>";
 
 //doorbell - use rc-switch receive example to get the code
@@ -44,7 +44,7 @@ char mqttTopicIp[64];
 char mqttTopic[64];
 
 long lastReconnectAttempt = 0; //For the non blocking mqtt reconnect (in millis)
-long lastRing = 1;
+long lastRing = 0;
 
 void setup() {
   Serial.begin(115200);
