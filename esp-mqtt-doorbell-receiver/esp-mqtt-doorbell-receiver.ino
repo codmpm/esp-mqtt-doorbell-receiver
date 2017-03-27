@@ -143,7 +143,6 @@ void loop() {
   }
 
   //reset lastRing time if the ringDelay is reached
-  //also reset ringCtr as there could be too few packets from last receive
   if ((lastRing > 0) && ((millis() - lastRing) > ringDelay)) {
     lastRing = 0;
   }
