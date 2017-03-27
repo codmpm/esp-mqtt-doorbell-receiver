@@ -23,7 +23,7 @@ After the first upload of the sketch, you could update the ESP via [ArduinoOTA](
 ## Functions
 The sketch simply listens for a radio packet with the configured code. On receiving it publishes a message to an mqtt-broker to `<topic-prefix>ring`, non persistent.
 
-After receiving a valid radio code it would not receive any more packets for the next 5 seconds (configrable). This is cause the most doorbell buttons will transmit at least 5-8 packets or as long as the button is pressed.
+After receiving a valid radio code it would not receive any more packets for the next 5 seconds (configurable). This is cause the most doorbell buttons will transmit at least 5-8 packets or as long as the button is pressed and one received message is enough.
 
 Additionaly the online status and the IP of the device will be published to `<topic-prefix>status` and `<topic-prefix>ip`. The status is done via mqtt's last-will statement and will state `offline` if the device disconnects for some reason.
 
