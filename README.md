@@ -8,7 +8,7 @@ So I ordered some cheap [433MHz modules](https://www.amazon.de/XCSOURCE-Transmit
 I've used the `receive-simple` example and got a very clear reception from my doorbell button. Also I got the radio code for my particular sender. Then it was quite simple to write a basic sketch which sends an mqtt message everytime the doorbell button gets pressed.
 
 ## Wiring
-This needs the mentioned 433MHz-Receiver Modules and is designed for an ESP8266. I my case I've used an ESP-01 as I need only need one GPIO.
+This needs the mentioned 433MHz-Receiver Modules and is designed for an ESP8266. I my case I've used an ESP-01 as I only need one GPIO.
 
 The receiver should be fitted with a 17cm solid core wire as antenna and _must_ be supplied with 5V as the reception is very poor if you drive it with 3.3V.
 
