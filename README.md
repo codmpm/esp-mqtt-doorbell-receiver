@@ -20,6 +20,9 @@ The ESP-01 needs 3.3V so you need to level-shift the output of the receiver modu
 ### Schematics
 ![image of circuit schematic](esp-mqtt-doorbell-receiver-circuit.png)
 
+### Board
+![image of board](esp-mqtt-doorbell-receiver-board.jpg)
+
 Here's the eagle file: [esp-mqtt-doorbell-receiver.sch](esp-mqtt-doorbell-receiver.sch)
 
 ## Functions
