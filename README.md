@@ -3,6 +3,8 @@
 I wanted to be able to get noticed when our doorbell rang. It is a cheap radio doorbell labeled QH-C-CE, which I ordered from amazon years ago. 
 After opening it up I was lucky to find a 433MHz crystal and thought it must be possible to receive a radio packet from it.
 
+> See also the excelent tutorial on using the Sonoff RF Bridge from @xoseperez: http://tinkerman.cat/hacking-sonoff-rf-bridge-433/
+
 So I ordered some cheap [433MHz modules](https://www.amazon.de/XCSOURCE-Transmitter-Receiver-Arduino-TE122/dp/B00V4ISS38/ref=sr_1_3?ie=UTF8&qid=1490643731&sr=8-3) and started to investigate. Luckily there is already a versatile library to receive 433MHz-signal: [rc-switch](https://github.com/sui77/rc-switch) - of course this should also work with 315MHz devices.
 
 I've used the `receive-simple` example and got a very clear reception from my doorbell button. Also I got the radio code for my particular sender. Then it was quite simple to write a basic sketch which sends an mqtt message everytime the doorbell button gets pressed.
